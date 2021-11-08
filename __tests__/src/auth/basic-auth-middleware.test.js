@@ -49,7 +49,7 @@ describe("Auth Middleware", () => {
         authorization: "Basic YWRtaW46cGFzc3dvcmQ=",
       };
       middleware(req, res, next).then(() => {
-        expect(next).toHaveBeenCalled();
+        expect(next).toHaveBeenCalledWith();
       });
     }); // it()
   });
