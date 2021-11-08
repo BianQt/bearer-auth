@@ -42,8 +42,8 @@ describe('Auth Router', () => {
         done();
       });
 
-      xit('can signin with basic', async (done) => {
-        const res = await mockRequest.post('/signup').send(users[userType]);
+      it('can signin with basic', async (done) => {
+        // const res = await mockRequest.post('/signup').send(users[userType]);
         const response = await mockRequest.post('/signin').auth(users[userType].username, users[userType].password);
 
         const userObject = response.body;
@@ -55,7 +55,7 @@ describe('Auth Router', () => {
         done();
       });
 
-      xit('can signin with bearer', async (done) => {
+      it('can signin with bearer', async (done) => {
 
         // First, use basic to login to get a token
         const response = await mockRequest.post('/signin')
