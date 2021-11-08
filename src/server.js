@@ -23,8 +23,12 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use(authRoutes);
 
+app. get('/',(req,res)=>{
+  res.send('<h1>Server is Up & Running!</h1>');
+})
+
 // Catchalls
-app.use(notFound);
+app.use("*",notFound);
 app.use(errorHandler);
 
 module.exports = {
