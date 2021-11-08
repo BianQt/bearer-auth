@@ -2,7 +2,7 @@ LAB07 - Authentication
 Bayan Qutshan
 
 * [Pull-Request](https://github.com/BianQt/bearer-auth/pull/1)
-* [bianqt-basic-auth](https://bianqt-basic-auth.herokuapp.com/)
+* [bianqt-bearer-auth](https://bianqt-bearer-auth.herokuapp.com/)
 
 ## Setup
 ```.env``` requirements
@@ -15,3 +15,6 @@ Bayan Qutshan
 ## Tests
 Unit Tests: npm run test
 Lint Tests: npm run lint
+
+## UML
+![notes](./note.jpg)
